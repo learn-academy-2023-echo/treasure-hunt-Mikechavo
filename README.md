@@ -20,11 +20,20 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
   - passed in the index to Square.js
   - established the key value for the map function
   - created function to handle the click to alert the index
-  
 
 
-- As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
-- As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
+
+- 3 As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+- branch: index-postion-mike
+- made copy of board using spread oprator
+- updated the value of square at specific index to be tree emoji
+
+
+- 4 As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
+- added the bomb emoji
+- added if/else stament
+
+
 - As a user, I can click on a “Play Again” button that will restart the game.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.

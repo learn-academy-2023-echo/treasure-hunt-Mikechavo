@@ -18,19 +18,41 @@ const App = () => {
     const [tresureLocation, setTresureLocation] = useState(
       Math.floor(Math.random() * board.length)
     )
-        console.log(tresureLocation)
+
+    const [bombLocation, setBombLocation] = useState(
+      Math.floor(Math.random() * board.length)
+    )   
     const handleGamePlay = (clickedSquare) => {
     let updateBoard = [...board]
     if(clickedSquare === tresureLocation) {
       updateBoard[clickedSquare] = "💎"
       setBoard(updateBoard) 
+    } else if (clickedSquare === bombLocation) {
+      updateBoard[clickedSquare] = "💣"
+      setBoard(updateBoard)
     } else {
       updateBoard[clickedSquare] = "🎄"
       setBoard(updateBoard)
     }
+
+   
+
   }
-    
-  
+
+  // const playAgain = () => {
+  //   setBoard([...board])
+  //   setTresureLocation(Math.floor(Math.random() * board.length))
+  //   setBombLocation(
+  //     Math.floor(Math.random() * board.length))
+  // }
+    const playAgain = () => {
+      const newBoard= [...]
+      setBoard(newBoard)
+      setTresureLocation(Math.floor(Math.random() * board.length))
+      setBombLocation(
+        Math.floor(Math.random() * board.length))
+    }
+  console.log(tresureLocation)
 
   return (
     <>
@@ -43,6 +65,9 @@ const App = () => {
           key={index}
           handleGamePlay={handleGamePlay}/>
          })}
+      </div>
+      <div>
+        <button onClick={playAgain}>Play Again</button>
       </div>
     </>
   )

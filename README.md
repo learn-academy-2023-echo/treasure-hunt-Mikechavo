@@ -9,13 +9,20 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 
 ### 📚 User Stories
 
-- As a user, I can see a page with a three by three grid board game with a question mark in each square.
-  -branch: gaame board
-  -mapped over the aarray in state to dynamically redner 9 squares
-  -passed value of array in state to square
-  -sytled square
+- 1 As a user, I can see a page with a three by three grid board game with a question mark in each square.
+  - branch: game board
+  - mapped over the aarray in state to dynamically redner 9 squares
+  - passed value of array in state to square
+  - sytled square
+
+- 2 As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+  - branch: index-postion-mike
+  - passed in the index to Square.js
+  - established the key value for the map function
+  - created function to handle the click to alert the index
   
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
